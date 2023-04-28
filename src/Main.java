@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        HashMap<String, String> kraj_stolica = new HashMap<String, String>();
+        HashMap<String, String> kraj_stolica = new HashMap<>();
 
 
         System.out.println("Podaj kraj i stolice (znak '/' konczy)");
@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Podaj kraj aby wyswietlic stolice");
         String nameToFind = scanner.nextLine();
         if (kraj_stolica.containsKey(nameToFind)) {
-            System.out.println("Panstwo: " + nameToFind + " Stolica: " + kraj_stolica);
+            System.out.println("Panstwo: " + nameToFind + " Stolica: " + kraj_stolica.get(nameToFind));
         } else
             System.out.println("nie ma stolicy dla : " + nameToFind);
 
